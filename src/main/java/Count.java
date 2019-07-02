@@ -12,15 +12,13 @@ public class Count {
         while (iterator.hasNext()) {
             Integer num = iterator.next();
             int meter = countNum / num;
-            if (countNum != 0) {
-                System.out.print(num + "-" + meter + "; ");
+            if (meter != 0) {
+                System.out.println(num + "-" + meter);
                 countNum %= num;
                 if (countNum == 0) {
                     break;
                 }
             }
-            System.out.println();
         }
-        System.out.println();
     }
 }
